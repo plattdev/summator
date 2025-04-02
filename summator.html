@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Mi Primer Programa</title>
+    <style>
+        h1{
+          color: red;
+        }
+    </style>
+</head>
+
+<!-- La forma de incluir la hoja de estilo en nuestra aplicación  -->
+<link rel="stylesheet" type="text/css" href="css/primer_estilo.css">
+
+<body>
+    <h1>Sumadora</h1>
+    <fieldset>
+        <label>Número 1:</label><input type="text" id="numero1" value="">
+    </fieldset>
+    <fieldset>
+        <label>Número 2:</label><input type="text" id="numero2" value="">
+    </fieldset>
+    <!-- queremos que al seleccionar “Sumar” se lleve a cabo la suma correspondiente. Para ello utilizaremos el evento onclick del botón y le asignaremos a este evento la función hacer_suma -->
+    <input type="button" value="Sumar" onclick="hacer_suma()" class="boton" />
+    
+    <!-- Para incluir un archivo JavaScript en un documento HTML utilizamos la etiqueta <script> indicando la ruta donde se encuentra el archivo .js. -->
+    <script type="text/javascript" src="js/primer_script.js"></script>
+</body>
+</html>
+
